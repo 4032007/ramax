@@ -9,7 +9,7 @@ $('.slider-news_main').each(function(){
         infinite: true,
         fade: false,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 5000,
 		cssEase: 'linear',
 		speed: 500,
         prevArrow: $(this).parent().parent().find('.prev-news'),
@@ -41,6 +41,49 @@ $('.slider-news_main').each(function(){
         ]
     });
 });
+
+$('.slider-other-blog').each(function(){
+    $(this).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        infinite: true,
+        fade: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		cssEase: 'linear',
+		speed: 500,
+        prevArrow: $(this).parent().parent().find('.prev-blog'),
+        nextArrow: $(this).parent().parent().find('.next-blog'),
+        responsive: [
+            {
+                breakpoint: 999,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
 
 //tabs interier
 	$('.nav-news_main li:eq(0)').addClass('active');
@@ -105,10 +148,44 @@ $('.slider-services_m').each(function(){
 
 
 
+//select
+	$('.sel-filter select').selectbox();
 
 
+//maps
+ymaps.ready(function () {
+	var myMap = new ymaps.Map('map', {
+			center: [55.7211829,37.6497726],
+			zoom: 16,
+			controls: []
+		}, {
+			suppressMapOpenBlock: true // отключаем "Открыть в Яндекс.Картах"
+		}),
+		
+		myPlacemark = new ymaps.Placemark([55.7211829,37.6497726], {
+			balloonContent: '<div class="baloon-map">АО «РАМАКС Интернейшнл», м. Павелецкая</div>'
+		}, {
+			iconLayout: 'default#image',
+			iconImageHref: 'images/ico-map.svg',
+			iconImageSize: [92, 112],
+			iconImageOffset: [-0, -72]
+		});
+		
+	myMap.behaviors.disable('scrollZoom');
+	myMap.geoObjects.add(myPlacemark);
+});
 
-
+//tabs
+	$('.tabs-tb').each(function(){
+		$(this).find('.nav-tb div:eq(0), .nav-tb li:eq(0)').addClass('active');
+		$(this).find('.nav-tb div, .nav-tb li').click(function () {
+			var ind = $(this).index();
+			$(this).parents('.tabs-tb').find('.cont-tb').find('.tab-tb:eq(' + ind + ')').show().addClass('active').siblings('.tab-tb:visible').hide().removeClass('active');
+			$(this).addClass('active');
+			$(this).siblings('.nav-tb div, .nav-tb li').removeClass('active')
+			return false;
+		});
+	});	
 
 	
 //header
