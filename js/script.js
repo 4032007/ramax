@@ -186,6 +186,12 @@ ymaps.ready(function () {
 			return false;
 		});
 	});	
+	
+//all
+	$('.list-history .link-all a').click(function(){
+		$(this).toggleClass('active').parent().parent().toggleClass('active')
+		return false
+	})
 
 	
 //header
