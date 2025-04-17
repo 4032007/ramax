@@ -85,6 +85,50 @@ $('.slider-other-blog').each(function(){
 });
 
 
+$('.slider-blog-state').each(function(){
+    $(this).slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        infinite: true,
+        fade: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		cssEase: 'linear',
+		speed: 500,
+        prevArrow: $(this).parent().parent().find('.prev-other-blog'),
+        nextArrow: $(this).parent().parent().find('.next-other-blog'),
+        responsive: [
+            {
+                breakpoint: 999,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+
+
 //tabs interier
 	$('.nav-news_main li:eq(0)').addClass('active');
 	$('.tab-news_main:eq(0)').addClass('active');
