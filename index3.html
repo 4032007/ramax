@@ -28,6 +28,19 @@
 <div class="wr-site">
 	<div class="main">
         <div class="rsp"></div>
+        
+        <div class="wr-search-page">
+            <div class="panel-search-page">
+            	<form>
+                	<div class="field-search-page">
+                    	<input type="text" placeholder="Поиск по сайту">
+                        <div class="but-search-page"><button type="submit"></button></div>
+                    </div>
+                </form>
+            </div>
+            <div class="close-panel-search"></div>
+        </div>
+        
         <div class="wr-header">
             <header>
 				<div class="header-left">
@@ -43,10 +56,71 @@
                         	<li><a href="#">eng</a></li>
                         </ul>
                     </div>
-                    <div class="link-callback"><a href="#">Отправить запрос</a></div>
+                    <div class="link-callback"><a data-fancybox href="#callback">Отправить запрос</a></div>
                     <div class="phone-h"><a href="tel:+74959136771">+7 (495) 913-6771</a></div>
                 </div>
             </header>
+            
+            <div class="wr-panel-menu">
+                <div class="panel-menu">
+                    <div class="in-panel-menu">
+                        <div class="col-menu">
+                            <ul>
+                                <li><a href="#">О компании</a>
+                                    <ul>
+                                        <li><a href="#">История компании</a></li>
+                                        <li><a href="#">Центры компетенций</a></li>
+                                        <li><a href="#">Партнёры</a></li>
+                                        <li><a href="#">Награды и достижения</a></li>
+                                        <li><a href="#">Документы и сертификаты</a></li>
+                                        <li><a href="#">Карьера</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-menu">
+                            <ul>
+                                <li><a href="#">Пресс-центр</a>
+                                    <ul>
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="#">Публикации в СМИ</a></li>
+                                        <li><a href="#">Анонсы мероприятий</a></li>
+                                        <li><a href="#">Статьи</a></li>
+                                        <li><a href="#">Вебинары</a></li>
+                                        <li><a href="#">ДИТ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-menu">
+                            <ul>
+                                <li><a href="#">Направления</a>
+                                    <ul>
+                                        <li><a href="#">ERP системы</a></li>
+                                        <li><a href="#">Process Mining</a></li>
+                                        <li><a href="#">Business Intelligence</a></li>
+                                        <li><a href="#">Налоговый мониторинг</a></li>
+                                        <li><a href="#">Работа с данными и аналитика</a></li>
+                                        <li><a href="#">Customer Experience</a></li>
+                                        <li><a href="#">Информационная безопасность</a></li>
+                                        <li><a href="#">Портальные решения</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-menu">
+                            <ul>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
         </div>
         
 		<div class="content content-inner">
@@ -210,13 +284,13 @@
                 	<div class="copy">© Рамакс Групп, 2024</div>
                     <div class="contacts-footer">
                     	<div class="phone-f"><a href="tel:+74959136771">+7 (495) 913-6771</a></div>
-                        <div class="callback_f"><a href="#">Отправить запрос </a></div>
+                        <div class="callback_f"><a data-fancybox href="#callback">Отправить запрос</a></div>
                     </div>
                 </div>
                 <div class="link-f">
                 	<ul>
-                        <li><a href="#">Политика обработки персональных данных по поручению</a></li>
-                        <li><a href="#">Политика обработки персональных данных</a></li>
+                        <li><a target="_blank" href="#">Политика обработки персональных данных по поручению</a></li>
+                        <li><a target="_blank" href="#">Политика обработки персональных данных</a></li>
                     </ul>
                 </div>
             </div>
@@ -224,112 +298,50 @@
             <div class="right-footer">
             	<div class="soc-f">
                 	<ul>
-                    	<li class="item1"><a target="_blank" href="#"></a></li>
-                        <li class="item2"><a target="_blank" href="#"></a></li>
-                        <li class="item3"><a target="_blank" href="#"></a></li>
+                    	<li class="item1"><a target="_blank" href="https://t.me/ramax_group"></a></li>
+                        <li class="item2"><a target="_blank" href="https://www.youtube.com/channel/UC0-YWCNHsW2_-qCmvTdws6Q"></a></li>
+                        <li class="item3"><a target="_blank" href="https://vk.com/ramaxgroup"></a></li>
                     </ul>
                 </div>
             </div>
 		</div>
 	</footer>
 </div>
-<!--<script>
- document.addEventListener("DOMContentLoaded", function () {
-        var swiper1 = new Swiper("#swiper1", {
-            slidesPerView: 2, // Показывать два слайда
-            spaceBetween: 20, // Отступ между слайдами
-            loop: true, // Бесконечная прокрутка
-            speed: 5000, // Скорость автопрокрутки (медленно)
-            autoplay: {
-                delay: 0, // Непрерывная прокрутка
-                disableOnInteraction: false, // Чтобы не отключалась автопрокрутка после взаимодействия
-            },
-            navigation: {
-                nextEl: "#next-news1", // Стрелка "вперед"
-                prevEl: "#prev-news1", // Стрелка "назад"
-            },
-        });
 
-        const nextButton1 = document.querySelector("#next-news1");
-        const prevButton1 = document.querySelector("#prev-news1");
-        const swiperContainer = document.querySelector("#swiper1");
-
-        // Изменяем скорость и перемещаем слайдер на начало ближайшего слайда при наведении
-        nextButton1.addEventListener("mouseenter", function () {
-            swiper1.params.speed = 500; // Быстрое переключение через стрелку
-            swiper1.update(); // Обновляем параметры слайдера
-            swiper1.slideToClosest(); // Перемещаем на ближайший слайд
-        });
-
-        prevButton1.addEventListener("mouseenter", function () {
-            swiper1.params.speed = 500; // Быстрое переключение через стрелку
-            swiper1.update(); // Обновляем параметры слайдера
-            swiper1.slideToClosest(); // Перемещаем на ближайший слайд
-        });
-
-        swiperContainer.addEventListener("mouseenter", function () {
-            swiper1.params.speed = 500; // Быстрое переключение через слайдер
-            swiper1.update(); // Обновляем параметры слайдера
-            swiper1.slideToClosest(); // Перемещаем на ближайший слайд
-        });
-
-        // Возвращаем нормальную скорость после того, как курсор покидает слайдер или стрелки
-        nextButton1.addEventListener("mouseleave", function () {
-            swiper1.params.speed = 5000; // Обычная скорость автопрокрутки
-            swiper1.update(); // Обновляем параметры слайдера
-        });
-
-        prevButton1.addEventListener("mouseleave", function () {
-            swiper1.params.speed = 5000; // Обычная скорость автопрокрутки
-            swiper1.update(); // Обновляем параметры слайдера
-        });
-
-        swiperContainer.addEventListener("mouseleave", function () {
-            swiper1.params.speed = 5000; // Обычная скорость автопрокрутки
-            swiper1.update(); // Обновляем параметры слайдера
-        });
-
-        // Остановка автопрокрутки при наведении на слайдер или стрелки
-        nextButton1.addEventListener("mouseenter", function () {
-            swiper1.autoplay.stop(); // Останавливаем автопрокрутку
-        });
-
-        prevButton1.addEventListener("mouseenter", function () {
-            swiper1.autoplay.stop(); // Останавливаем автопрокрутку
-        });
-
-        swiperContainer.addEventListener("mouseenter", function () {
-            swiper1.autoplay.stop(); // Останавливаем автопрокрутку
-        });
-
-        // Возобновление автопрокрутки при уходе курсора с слайдера или стрелок
-        nextButton1.addEventListener("mouseleave", function () {
-            swiper1.autoplay.start(); // Возобновляем автопрокрутку
-        });
-
-        prevButton1.addEventListener("mouseleave", function () {
-            swiper1.autoplay.start(); // Возобновляем автопрокрутку
-        });
-
-        swiperContainer.addEventListener("mouseleave", function () {
-            swiper1.autoplay.start(); // Возобновляем автопрокрутку
-        });
-
-        // Устанавливаем быструю прокрутку при клике по стрелкам
-        nextButton1.addEventListener("click", function () {
-            swiper1.params.speed = 500; // Быстрая прокрутка при клике
-            swiper1.update(); // Обновляем параметры слайдера
-            swiper1.slideNext(); // Переключаем на следующий слайд
-            swiper1.autoplay.stop(); // Останавливаем автопрокрутку
-        });
-
-        prevButton1.addEventListener("click", function () {
-            swiper1.params.speed = 500; // Быстрая прокрутка при клике
-            swiper1.update(); // Обновляем параметры слайдера
-            swiper1.slidePrev(); // Переключаем на предыдущий слайд
-            swiper1.autoplay.stop(); // Останавливаем автопрокрутку
-        });
-    });
-</script>-->
+<div style="display:none" id="callback" class="pop-callback">
+	<div class="tit-pop">Отправить запрос</div>
+    <form>
+    	<div class="field">
+            <input type="text" placeholder="">
+            <label>ФИО <i>*</i></label>
+        </div>
+    	<div class="field">
+            <input type="text" placeholder="">
+            <label>Компания <i>*</i></label>
+        </div>
+    	<div class="field">
+            <input type="text" placeholder="">
+            <label>Телефон <i>*</i></label>
+        </div>
+    	<div class="field">
+            <input type="text" placeholder="">
+            <label>E-mail </label>
+        </div>
+    	<div class="textarea">
+            <textarea></textarea>
+            <label>Ваш запрос <i>*</i></label>
+        </div>
+        <div class="text-assets">* — заполните обязательно</div>
+        <div class="check">
+            <input checked id="check-pop1" type="checkbox">
+            <label for="check-pop1">Я согласен получать информационную рассылку</label>
+        </div>
+        <div class="check">
+            <input id="check-pop2" type="checkbox">
+            <label for="check-pop2">Я ознакомился с <a target="_blank" href="#">Политикой по работе с персональными данными и даю согласие на передачу и обработку моих персональных данных</a>.</label>
+        </div>
+        <div class="button-send"><button type="submit">Отправить запрос</button></div>
+    </form>
+</div>
 </body>
 </html>

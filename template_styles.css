@@ -67,6 +67,21 @@ header{max-width:1380px;padding:0 15px 0 15px;margin:0 auto;display:flex;align-i
 .first-block:before{border-radius:0 0 50px 50px !important}
 .phone-h{margin:0 0 0 44px;font-size:24px;line-height:100%;font-weight:600}
 .phone-h a{text-decoration:none;color:#333}
+.wr-panel-menu{position:absolute;width:100%;top:100%;background:#f6f6f6;border-radius:0 0 50px 50px;transition:0.3s;opacity:0;pointer-events:none}
+.wr-panel-menu.active{pointer-events:auto;opacity:1}
+.panel-menu{max-width:1230px;padding:37px 15px 64px 15px;margin:0 auto}
+.in-panel-menu{display:flex;margin:0 0 0 -50px}
+.col-menu{width:calc(25% - 50px);margin:0 0 0 50px}
+.col-menu>ul{list-style-type:none;margin:0;padding:0}
+.col-menu>ul>li{background:0 0;margin:0 0 41px 0;padding:0;font-size:16px;line-height:130%;text-transform:uppercase;font-weight:700}
+.col-menu>ul>li:last-child{margin-bottom:0}
+.col-menu>ul>li>a{color:#333;text-decoration:none}
+.col-menu>ul>li>a:hover,.col-menu>ul>li>span{color:#ff3434}
+.col-menu>ul>li>ul{list-style-type:none;margin:30px 0 0 0;padding:0}
+.col-menu>ul>li>ul li{background:0 0;margin:0 0 13px 0;padding:0;text-transform:none;font-weight:500;font-size:16px;line-height:130%}
+.col-menu>ul>li>ul li:last-child{margin-bottom:0}
+.col-menu>ul>li>ul li a{color:#000;text-decoration:none}
+.col-menu>ul>li>ul li a:hover,.col-menu>ul>li>ul li span{color:#ff3434}
 .wr-white{position:relative;z-index:50}
 .wr-white:after{content:'';display:block;position:absolute;top:-2px;left:0;width:100%;height:calc(100% + 2px);background:#f6f6f6;z-index:-1}
 .wr-white:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;border-radius:50px;z-index:2}
@@ -773,8 +788,9 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 .check{position:relative;margin:0 0 21px 0}
 .check input{position:absolute;top:0;left:0;width:1px;height:1px;opacity:0}
 .check label{position:relative;padding:0 0 0 32px;cursor:pointer;font-weight:500;display:inline-block;font-size:14px;line-height:130%;color:#999}
-.check label:before{position:absolute;top:-4px;left:0;width:24px;height:24px;border-radius:5px;background:#ff3434;content:'';display:block}
+.check label:before{position:absolute;top:-4px;left:0;width:24px;height:24px;box-sizing:border-box;border-radius:5px;background:#fff; border:1px solid #D9D9D9;content:'';display:block}
 .check label:after{position:absolute;left:4px;top:3px;display:none;content:'';background:url(images/check.svg) no-repeat;width:17px;height:12px}
+.check input:checked+label:before{ background:#FF3434; border-color:#FF3434}
 .check input:checked+label:after{display:block}
 .check label a{color:#999;text-decoration:underline}
 .check label a:hover{text-decoration:none}
@@ -782,6 +798,41 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 .button-send button{font-size:17px;font-weight:500;display:inline-flex;min-height:50px;border:none;width:100%;border-radius:50px;align-items:center;color:#fff;text-decoration:none;font-family:"Wix Madefor Display",sans-serif;padding:0 40px 2px 40px;justify-content:center;text-align:center;background:linear-gradient(90deg,#dc0000 0,#ff3434 100%);cursor:pointer;outline:0}
 .button-send button:hover{background:linear-gradient(90deg,#ff3434 0,#dc0000 100%)}
 .error{background:#ffdcdc!important}
+.field input.active + label{display:none}
+
+/*popup*/
+.pop-callback{width:100%;max-width:542px;padding:47px 50px 41px 50px;background:#f6f6f6;border-radius:50px}
+.tit-pop{font-size:36px;font-weight:600;line-height:120%;margin:0 0 40px 0}
+.field{position:relative}
+.field label{display:flex;align-items:center;padding:0 20px 0 20px;color:#999;pointer-events:none;font-size:16px;line-height:30px;position:absolute;top:0;left:0;width:100%;height:100%}
+.field label i{font-style:normal;margin:0 0 0 3px;color:#ff5a5a}
+.pop-callback .field input{padding-left:20px;padding-right:20px}
+.textarea{position:relative;margin:0 0 20px 0}
+.textarea label{display:flex;align-items:center;padding:0 20px 0 20px;color:#999;pointer-events:none;font-size:16px;line-height:30px;position:absolute;top:10px;left:0;width:100%;height:auto}
+.textarea label i{font-style:normal;margin:0 0 0 3px;color:#ff5a5a}
+.textarea textarea{width:100%;background:#fff;display:block;padding:14px 20px 0 20px;font-family:"Wix Madefor Display",sans-serif;outline:0;font-size:16px;font-weight:500;height:165px;border:1px solid transparent;border-radius:25px;overflow-y:auto;resize:none}
+.textarea textarea::placeholder{color:#999}
+.textarea textarea.active + label{display:none}
+.pop-callback .check label{font-size:16px;line-height:125%}
+.pop-callback .check label:before{top:-2px}
+.pop-callback .check label:after{top:5px}
+.pop-callback .button-send{margin-top:33px;max-width:258px;margin-left:auto;margin-right:auto}
+.fancybox-close-small{ position:absolute; top:40px !important; opacity:1 !important; right:40px !important; background:url(images/close-pop.svg) no-repeat; width:23px; height:23px;}
+.fancybox-close-small:hover{opacity:0.9 !important}
+.fancybox-close-small svg{ display:none}
+.pop-callback .text-assets{ font-size:16px; margin-bottom:33px;line-height:30px}
+
+/*search site*/
+.wr-search-page{position:fixed;top:-114px;left:0;transition:.3s;width:100%;border-radius:0 0 50px 50px;background:#f6f6f6;z-index:100}
+.wr-search-page.active{top:0}
+.panel-search-page{max-width:977px;padding:32px 15px 32px 15px;margin:0 auto}
+.field-search-page{position:relative}
+.field-search-page input{width:100%;background:#fff;display:block;padding:0 50px 0 25px;font-family:"Wix Madefor Display",sans-serif;outline:0;font-size:16px;font-weight:500;height:50px;border:1px solid transparent;border-radius:50px}
+.field-search-page input::placeholder{color:#999}
+.but-search-page{position:absolute;top:50%;right:18px;transform:translateY(-50%)}
+.but-search-page button{display:block;border:none;cursor:pointer;background:url(images/ico-search.svg) no-repeat;width:16px;height:16px;cursor:pointer}
+.close-panel-search{position:absolute;top:25px;right:25px;cursor:pointer;background:url(images/close-pop.svg) no-repeat;width:23px;height:23px}
+.close-panel-search:hover{opacity:.9}
 
 @media screen and (min-width:999px){
 	.pages ul li a:hover{color:#fff;background:#999}
