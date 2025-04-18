@@ -361,7 +361,7 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 .bot-blog{border-top:1px solid #d9d9d9;display:flex;align-items:center;padding:20px 0 0 0}
 .link-back{font-size:16px;line-height:24px;font-weight:500}
 .link-back a{position:relative;padding:0 0 0 60px;display:inline-block;color:#333;text-decoration:none}
-.link-back a:before{position:absolute;top:50%;left:0;transform:translateY(-50%);content:'';display:block;background:url(images/arrow-back.svg) no-repeat;width:46px;height:45px}
+.link-back a:before{position:absolute;top:50%;left:0;transform:translateY(-50%);content:'';display:block;background:url(images/arrow-back.svg) no-repeat;width:46px;height:46px}
 .avail-blog{display:flex;align-items:center;margin-left:auto}
 .avail-blog p{margin:0 13px 0 0;padding:0;font-size:16px;line-height:24px;font-weight:500}
 .like-avail-blog{font-size:20px;line-height:30px;font-weight:500}
@@ -721,6 +721,67 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 .siblings-proj{margin-top:61px}
 .slider-siblings-proj{margin:0 -10px 42px -10px}
 .slider-siblings-proj .slide{padding-left:10px;padding-right:10px}
+
+/*webinars*/
+.body-webinar{display:flex}
+.left-webinar{margin-right:20px}
+.top-panel-webinar{padding:11px 0 0 0;margin:0 0 55px 0;display:flex;border-top:1px solid #d9d9d9}
+.top-panel-webinar .func-state{margin:0 0 0 auto}
+.about-top-webinar{margin:0 0 20px 0}
+.img-top-webinar img{display:block;width:100%;border-radius:15px 15px 0 0}
+.desc-top-webinar{background:#f6f6f6;border-radius:0 0 15px 15px;padding:42px 41px 48px 41px}
+.desc-top-webinar p{margin:0 0 20px 0;padding:0;font-size:20px;line-height:30px;font-weight:700;color:#333}
+.desc-top-webinar p:last-child{margin-bottom:0}
+.info-webinar{display:flex;margin:0 0 40px 0}
+.time-webinar{position:relative;z-index:50;width:calc(50% - 10px);background:#f6f6f6;border-radius:15px;padding:33px 190px 39px 21px}
+.time-webinar:before{position:absolute;bottom:47px;right:25px;z-index:-1;content:'';display:block;background:url(images/ico-webinar1.svg) no-repeat;width:123px;height:135px}
+.date-webinar{font-size:24px;line-height:125%;font-weight:800;text-transform:uppercase;margin:0 0 23px 0}
+.session-webinar{position:relative;font-size:20px;line-height:20px;padding:0 0 0 23px;font-weight:500;color:#999}
+.session-webinar:before{position:absolute;top:2px;left:0;content:'';display:block;width:17px;height:17px;background:url(images/ico-time-webinar.svg) no-repeat}
+.for-webinar{position:relative;width:calc(50% - 10px);z-index:50;background:#f6f6f6;border-radius:15px;margin-left:auto;padding:33px 32px 39px 34px}
+.tit-info-webinar{font-size:24ppx;font-weight:600;line-height:130%;margin:0 0 24px 0}
+.for-webinar ul{margin:0;padding:0;list-style-type:none}
+.for-webinar ul li{font-size:16px;line-height:24px;margin:0 0 20px 0;background:url(images/marker-vacan.svg) 0 8px no-repeat}
+.for-webinar ul li:last-child{margin-bottom:0}
+.for-webinar:before{position:absolute;bottom:41px;right:25px;content:'';z-index:-1;display:block;background:url(images/ico-webinar2.svg) no-repeat;width:112px;height:146px}
+.speakers-webinar{position:relative;margin:0 0 65px 0}
+.title-s{font-size:36px;line-height:130%;font-weight:600;margin:0 0 24px 0}
+.list-speakers-webinar{display:flex;flex-wrap:wrap;margin:-30px 0 20px -50px}
+.item-speakers-webinar{width:calc(33.333% - 50px);margin:30px 0 0 50px}
+.wr-ava-speakeer{position:relative}
+.ava-speaker{width:154px;height:154px;margin:0 0 23px 0;display:flex;align-items:center;justify-content:center}
+.ava-speaker img{display:block;margin:0 auto;border-radius:50%}
+.label-speaker{position:absolute;bottom:-14px;left:0;font-size:14px}
+.label-speaker i{display:inline-flex;align-items:center;justify-content:center;background:#06b1df;border-radius:5px;min-height:30px;font-style:normal;color:#fff;padding:0 10px 0 10px;white-space:nowrap}
+.name-speaker{font-size:24px;line-height:34px;font-weight:700;margin:0 0 8px 0}
+.item-speakers-webinar p{font-size:16px;margin:0;padding:0;line-height:24px;color:#999}
+.more-speaker{font-size:16px;line-height:24px}
+.more-speaker a{color:#ff3434}
+.programm-speaker .title-s{margin:0 0 30px 0}
+.programm-speaker p{margin:0 0 30px 0}
+.programm-speaker ul{margin-top:0}
+.programm-speaker .button{margin-top:95px;margin-bottom:61px}
+.programm-speaker .button a{min-width:246px}
+.bot-panel-webinar{border-top:1px solid #d9d9d9;padding:33px 0 0 0}
+.right-webinar{min-width:295px;width:295px}
+.form-webinar{background:#f6f6f6;border-radius:30px;padding:31px 20px 32px 20px}
+.tit-form-webinar{font-size:24px;line-height:125%;font-weight:700;margin:0 0 29px 0}
+.field{margin:0 0 20px 0}
+.field input{width:100%;background:#fff;display:block;padding:0 25px 0 25px;font-family:"Wix Madefor Display",sans-serif;outline:0;font-size:16px;font-weight:500;height:50px;border:1px solid transparent;border-radius:50px}
+.field input::placeholder{color:#999}
+.text-assets{font-size:14px;line-height:24px;color:#999;font-weight:500;margin:0 0 23px 0}
+.check{position:relative;margin:0 0 21px 0}
+.check input{position:absolute;top:0;left:0;width:1px;height:1px;opacity:0}
+.check label{position:relative;padding:0 0 0 32px;cursor:pointer;font-weight:500;display:inline-block;font-size:14px;line-height:130%;color:#999}
+.check label:before{position:absolute;top:-4px;left:0;width:24px;height:24px;border-radius:5px;background:#ff3434;content:'';display:block}
+.check label:after{position:absolute;left:4px;top:3px;display:none;content:'';background:url(images/check.svg) no-repeat;width:17px;height:12px}
+.check input:checked+label:after{display:block}
+.check label a{color:#999;text-decoration:underline}
+.check label a:hover{text-decoration:none}
+.button-send{margin:28px 0 0 0}
+.button-send button{font-size:17px;font-weight:500;display:inline-flex;min-height:50px;border:none;width:100%;border-radius:50px;align-items:center;color:#fff;text-decoration:none;font-family:"Wix Madefor Display",sans-serif;padding:0 40px 2px 40px;justify-content:center;text-align:center;background:linear-gradient(90deg,#dc0000 0,#ff3434 100%);cursor:pointer;outline:0}
+.button-send button:hover{background:linear-gradient(90deg,#ff3434 0,#dc0000 100%)}
+.error{background:#ffdcdc!important}
 
 @media screen and (min-width:999px){
 	.pages ul li a:hover{color:#fff;background:#999}
