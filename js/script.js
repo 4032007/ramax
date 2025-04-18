@@ -127,6 +127,48 @@ $('.slider-blog-state').each(function(){
     });
 });
 
+$('.slider-siblings-proj').each(function(){
+    $(this).slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        infinite: true,
+        fade: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		cssEase: 'linear',
+		speed: 500,
+        prevArrow: $(this).parent().parent().find('.prev-other-proj'),
+        nextArrow: $(this).parent().parent().find('.next-other-proj'),
+        responsive: [
+            {
+                breakpoint: 999,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
 
 
 //tabs interier
