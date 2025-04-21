@@ -50,7 +50,7 @@ $('.slider-other-blog').each(function(){
         dots: false,
         infinite: true,
         fade: false,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 2000,
 		cssEase: 'linear',
 		speed: 500,
@@ -84,6 +84,10 @@ $('.slider-other-blog').each(function(){
     });
 });
 
+$('.slider-other-blog, .slider-blog-state').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+  $(this).addClass('active');
+});
+
 
 $('.slider-blog-state').each(function(){
     $(this).slick({
@@ -93,10 +97,6 @@ $('.slider-blog-state').each(function(){
         dots: false,
         infinite: true,
         fade: false,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		cssEase: 'linear',
-		speed: 500,
         prevArrow: $(this).parent().parent().find('.prev-other-blog'),
         nextArrow: $(this).parent().parent().find('.next-other-blog'),
         responsive: [
@@ -135,10 +135,6 @@ $('.slider-siblings-proj').each(function(){
         dots: false,
         infinite: true,
         fade: false,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		cssEase: 'linear',
-		speed: 500,
         prevArrow: $(this).parent().parent().find('.prev-other-proj'),
         nextArrow: $(this).parent().parent().find('.next-other-proj'),
         responsive: [
