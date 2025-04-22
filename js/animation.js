@@ -1,4 +1,5 @@
 $(function(){
+gsap.matchMedia().add("(min-width: 767px)", () => {
 	gsap.registerPlugin(ScrollTrigger);
   
 //animation top
@@ -55,6 +56,7 @@ $(function(){
 		scrub: true,
 	  }
 	});
+});
 	
 //scroll logo
 	document.addEventListener('DOMContentLoaded', function () {
