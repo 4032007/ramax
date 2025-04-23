@@ -10,6 +10,7 @@ gsap.matchMedia().add("(min-width: 767px)", () => {
 		ease: "power2.out",
 		delay: 0.3
 	});
+	
 //services
 	gsap.from(".slider-services_m .slide", {
 	  y: 200,
@@ -20,6 +21,20 @@ gsap.matchMedia().add("(min-width: 767px)", () => {
 	  scrollTrigger: {
 		trigger: ".b-services_main",
 		start: "top 100%",
+		toggleActions: "play none none reset"
+	  }
+	});
+	
+//slider year about
+	gsap.from(".slider-history-about .slide", {
+	  y: 200,
+	  opacity: 0,
+	  duration: 1,
+	  stagger: 0.3,
+	  ease: "power3.out",
+	  scrollTrigger: {
+		trigger: ".history-about",
+		start: "top 70%",
 		toggleActions: "play none none reset"
 	  }
 	});
@@ -56,6 +71,20 @@ gsap.matchMedia().add("(min-width: 767px)", () => {
 		scrub: true,
 	  }
 	});
+	
+//animation number
+	gsap.to(".item-hist-about.item4, .item-hist-about.item5", {
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		ease: "power2.out"
+	});
+	gsap.to(".item-hist-about.item1, .two-hist-bl, .item-hist-about.item6, .item-hist-about.item7", {
+		opacity: 1,
+		x: 0,
+		duration: 1,
+		ease: "power2.out"
+	}); 
 });
 	
 //scroll logo
