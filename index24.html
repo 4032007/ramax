@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>Система налогового мониторинга</title> 
+	<meta name="description" content=""> 
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="template_styles.css?18987777895">
+	<script src="js/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f5b2c135-d598-4f73-a326-daaf0a564f30"></script>
+	<script src="js/gsap.min.js"></script>
+	<script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/slick.min.js"></script>
+    <script src="js/jquery.selectbox.min.js"></script>
+	<script src="js/script.js?255858876987485"></script>
+    <script src="js/animation.js?255858876987485"></script>
+</head>
+<body>
+<div class="wr-site">
+	<div class="main">
+        <div class="rsp"></div>
+        
+        <div class="wr-search-page">
+            <div class="panel-search-page">
+            	<form>
+                	<div class="field-search-page">
+                    	<input type="text" placeholder="Поиск по сайту">
+                        <div class="but-search-page"><button type="submit"></button></div>
+                    </div>
+                </form>
+            </div>
+            <div class="close-panel-search"></div>
+        </div>
+        
+        <div class="wr-header">
+            <header>
+				<div class="header-left">
+                	<div class="logo"><a href="/"><img src="images/logo.svg" alt=""></a></div>
+                    <div class="menu-tt">
+                        <a class="menu-but" href="#"><span></span></a>
+                    </div> 
+                </div>
+                <div class="header-right">
+                	<div class="but-search"></div>
+                    <div class="lang-h">
+                    	<ul>
+                        	<li><a href="#">eng</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-callback"><a data-fancybox href="#callback">Отправить запрос</a></div>
+                    <div class="phone-h"><a href="tel:+74959136771">+7 (495) 913-6771</a></div>
+                </div>
+            </header>
+            
+            <div class="wr-panel-menu">
+                <div class="panel-menu">
+                    <div class="in-panel-menu">
+                        <div class="col-menu">
+                            <ul>
+                                <li><a href="#">О компании</a>
+                                    <ul>
+                                        <li><a href="#">История компании</a></li>
+                                        <li><a href="#">Центры компетенций</a></li>
+                                        <li><a href="#">Партнёры</a></li>
+                                        <li><a href="#">Награды и достижения</a></li>
+                                        <li><a href="#">Документы и сертификаты</a></li>
+                                        <li><a href="#">Карьера</a></li>
+                                    </ul>
+                                    <div class="arrow-more-menu"></div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="col-menu">
+                            <ul>
+                                <li><a href="#">Пресс-центр</a>
+                                    <ul>
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="#">Публикации в СМИ</a></li>
+                                        <li><a href="#">Анонсы мероприятий</a></li>
+                                        <li><a href="#">Статьи</a></li>
+                                        <li><a href="#">Вебинары</a></li>
+                                        <li><a href="#">ДИТ</a></li>
+                                    </ul>
+                                    <div class="arrow-more-menu"></div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="col-menu">
+                            <ul>
+                                <li><a href="#">Направления</a>
+                                    <ul>
+                                        <li><a href="#">ERP системы</a></li>
+                                        <li><a href="#">Process Mining</a></li>
+                                        <li><a href="#">Business Intelligence</a></li>
+                                        <li><a href="#">Налоговый мониторинг</a></li>
+                                        <li><a href="#">Работа с данными и аналитика</a></li>
+                                        <li><a href="#">Customer Experience</a></li>
+                                        <li><a href="#">Информационная безопасность</a></li>
+                                        <li><a href="#">Портальные решения</a></li>
+                                    </ul>
+                                    <div class="arrow-more-menu"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-menu">
+                            <ul>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+		<div class="content">
+        	<div class="breadcrumbs">
+            	<ul>
+                    <li><a href="/">Ramax</a></li>
+                    <li><a href="#">Направления</a></li>
+                    <li><a href="#">Управление финансами</a></li>
+                    <li>Система налогового мониторинга</li>
+                </ul>
+            </div>
+            
+            <div class="top-service_ab">
+            	<div class="left-service_ab">
+                	<h1>Система налогового мониторинга</h1>
+                    <p>Открытость компании в&nbsp;обмен на&nbsp;сокращение количества налоговых проверок</p>
+                    <ul>
+                        <li>Дистанционный формат общения с&nbsp;налоговыми органами</li>
+                        <li>Снижение налоговых рисков за&nbsp;счет получения мотивированных мнений от&nbsp;ФНС</li>
+                        <li>Сокращение количества и&nbsp;сроков проведения налоговых проверок</li>
+                    </ul>
+                    <div class="panel-serv_ab">
+                    	<p>Закажите демонстрацию системы налогового мониторинга</p>
+                        <div class="but-more"><a data-fancybox href="#callback">Отправить заявку</a></div>
+                    </div>
+                </div>
+                
+                <div class="right-service_ab">
+                	<div class="img-top-serv_ab">
+                        <picture>
+                        	<source srcset="images_tmp/top-serv_ab1@1x.png 1x, images_tmp/top-serv_ab1@2x.png 2x" type="image/png">
+                        	<img src="images_tmp/top-serv_ab1@1x.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wr-grey-cont">
+            	<div class="b-scheme-service_ab">
+                	<div class="text-scheme-serv_ab">Переход на&nbsp;систему налогового мониторинга (СНМ) упрощает взаимодействие между ФНС и&nbsp;крупными предприятиями. Налоговая получает доступ к&nbsp;бухгалтерской и&nbsp;финансовой отчётности компании, а&nbsp;бизнес освобождается от&nbsp;проведения выездных и&nbsp;камеральных проверок.</div>
+                
+                	<div class="list-service_ab">
+                    	<div class="line-service_ab item1">
+                        	<div class="item-service_ab item1">
+                            	<div class="border-sevice_ab"></div>
+                                <i>Отправка отчетности в&nbsp;налоговую онлайн</i>
+                                <p>Сокращение объема предоставляемых налоговым органам документов на&nbsp;бумажных носителях.</p>
+                            </div>
+                        	<div class="item-service_ab item2">
+                            	<div class="border-sevice_ab"></div>
+                                <i>Рост эффективности внутренних процессов компании</i>
+                                <p>Автоматизированный контроль процессов и&nbsp;рисков сокращает число ошибок в&nbsp;отчетности.</p>
+                            </div>
+                        	<div class="item-service_ab item3">
+                            	<div class="border-sevice_ab"></div>
+                                <i>Предупреждение налоговых рисков, штрафов и&nbsp;пеней</i>
+                                <p>Устранение неопределенных налоговых позиций за&nbsp;счет получения мотивированного мнения налоговой службы.</p>
+                            </div>
+                        </div>
+                        
+                    	<div class="line-service_ab item2">
+                        	<div class="item-service_ab item4">
+                            	<div class="border-sevice_ab"></div>
+                                <i>Повышение скорости подготовки налоговой отчетности</i>
+                                <p>Автоматизация рутинных операций и&nbsp;сокращения объёма запрашиваемых ФНС документов.</p>
+                            </div>
+                        	<div class="item-service_ab item5">
+                            	<div class="border-sevice_ab"></div>
+                                <i>Сокращение камеральных и&nbsp;выездных проверок</i>
+                                <p>Канал коммуникации с&nbsp;налоговым ведомством для получения информации по&nbsp;хозяйственным операциям удаленно.</p>
+                            </div>
+                        	<div class="item-service_ab item6">
+                            	<div class="border-sevice_ab"></div>
+                                <i>Рост уровня доверия со&nbsp;стороны ФНС</i>
+                                <p>Сокращение количества ручных операций и&nbsp;повышение достоверности сформированной налоговой отчетности.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="block-info-scheme_ab">Сопровождение перехода на СНМ будет полезно крупным компаниям из различных отраслей, включая производственные, добывающие, транспортные предприятия. Например, RAMAX Group сотрудничает в том числе с Tele2 и Аэрофлотом. Программа интегрируется в существующую учётную систему, что сокращает сроки реализации прототипа на одном налоге до 2–4 месяцев.</div>
+                </div>
+            </div>
+            
+            <div class="b-what-serv_ab">
+            	<div class="title"><b>Стоит</b>&nbsp;ли переходить на&nbsp;налоговый мониторинг?</div>
+                
+                <div class="list-what-serv_ab">
+                    <div class="item-what-serv_ab">
+                        <p>Налоговый мониторинг&nbsp;&mdash; это диалог ФНС и&nbsp;бизнеса. Компания открывает финансовую отчетность и&nbsp;отслеживает действия ФНС с&nbsp;помощью истории запросов.</p>
+                    </div>
+                    <div class="item-what-serv_ab">
+                        <p>Традиционные формы взаимодействия с&nbsp;надзорным органом устаревают. Внедрение налогового мониторинга&nbsp;&mdash; возможность быть в&nbsp;числе лидеров цифровой трансформации.</p>
+                    </div>
+                    <div class="item-what-serv_ab">
+                        <p>Внедрение цифровых систем налогового учета&nbsp;&mdash; это инвестиции в&nbsp;имидж современной компании, ведущей честный и&nbsp;открытый бизнес.</p>
+                    </div>
+                </div>
+                
+                <div class="panel-serv_ab">
+                    <p>Получите план вступления в&nbsp;налоговый мониторинг</p>
+                    <div class="but-more"><a data-fancybox href="#callback">Отправить заявку</a></div>
+                </div>
+            </div>
+            
+            <div class="wr-grey-cont">
+                <div class="b-awards-serv_ab">
+                    <div class="title">Наши награды и&nbsp;достижения</div>
+                    
+                    <div class="list-awards-serv_ab">
+                        <div class="item-awards-serv_ab">
+                            <div class="in-awards-serv_ab">
+                                <div class="logo-about-serv_ab"><img src="images_tmp/logo-awords_serv_ab1.png" alt=""></div>
+                                <div class="desc-about-serv_ab">Премия РСПП в&nbsp;сфере корпоративного налогообложения в&nbsp;номинации &laquo;Налоговый проект года&raquo;</div>
+                            </div>
+                        </div>
+                        <div class="item-awards-serv_ab">
+                            <div class="in-awards-serv_ab">
+                                <div class="logo-about-serv_ab"><img src="images_tmp/logo-awords_serv_ab2.png" alt=""></div>
+                                <div class="desc-about-serv_ab">Лауреат премии Global CIO за&nbsp;проект года в&nbsp;номинации &laquo;Информационные технологии для финансовой службы&raquo;</div>
+                            </div>
+                        </div>
+                        <div class="item-awards-serv_ab">
+                            <div class="in-awards-serv_ab">
+                                <div class="logo-about-serv_ab"><img src="images_tmp/logo-awords_serv_ab3.png" alt=""></div>
+                                <div class="desc-about-serv_ab">Витрина данных для налогового мониторинга от&nbsp;RAMAX&nbsp;&mdash; победитель конкурса SAP Value Awards в&nbsp;номинации &laquo;Новые горизонты&raquo;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="b-settinegs-serv_ab">
+            	<div class="title"><b>Настроим интеграцию</b> с&nbsp;АИС &laquo;Налог-3&raquo;</div>
+                
+                <div class="text-setting-serv_ab">
+                	Настроим интеграцию с&nbsp;модулем АИС &laquo;Налог-3&raquo;, который позволит унифицировать процесс получения доступа налоговых органов к&nbsp;информационным системам компаний и&nbsp;сделать обмен данными простым и&nbsp;безопасным. 
+                	<div class="ico-info">
+                    	<i></i>
+                        <div class="pop-die-info">
+                        	При настройке и&nbsp;разработке интеграции мы&nbsp;используем решения, являющиеся лидерами рынка, а&nbsp;также обладаем реальным опытом интеграции с&nbsp;АИС &laquo;Налог-3&raquo;: наши Заказчики первыми перешли на&nbsp;продуктивную интеграцию с&nbsp;ФНС с&nbsp;января 2024&nbsp;года.
+                        </div>
+                    </div>
+                </div>
+            
+            	<div class="in-serv-setting_ab">
+                	<div class="body-serv-setting_ab">
+                    	<div class="left-serv-settings_ab">
+                        	<div class="tit-serv-settings_ab"><b>Задачи</b>, которые мы&nbsp;помогаем решить в&nbsp;рамках интеграции с&nbsp;АИС &laquo;Налог-3&raquo;</div>
+                        </div>
+                        
+                        <div class="right-serv-settings_ab">
+                        	<div class="list-serv-settings_ab">
+                                <ul>
+                                    <li>Выполнение законодательных требований ФНС к&nbsp;информационному взаимодействию в&nbsp;рамках налогового мониторинга в&nbsp;целях внедрения и&nbsp;настройки модуля интеграции информационных систем для целей налогового мониторинга с&nbsp;АИС &laquo;Налог-3&raquo;</li>
+                                    <li>Обеспечение прямого обмена информацией с&nbsp;системой налогового органа</li>
+                                    <li>Диагностика текущего состояния электронного архива на&nbsp;соответствие с&nbsp;требованиями ФНС России, формирование требований на&nbsp;доработку электронного архива, подготовка технического задания и&nbsp;проектирование доработок/разработок.</li>
+                                    <li>Доработка или внедрение электронного архива компании</li>
+                                    <li>Закупка и&nbsp;настройка средств криптографической защиты информации</li>
+                                    <li>Закупка и&nbsp;поставка интеграционного модуля для интеграции с&nbsp;АИС &laquo;Налог-3&raquo;</li>
+                                    <li>Интеграция информационных систем налогоплательщика с&nbsp;АИС &laquo;Налог-3&raquo;</li>
+                                    <li>Выполнение законодательных требований ФНС к&nbsp;информационному взаимодействию в&nbsp;рамках налогового мониторинга в&nbsp;целях внедрения и&nbsp;настройки модуля интеграции информационных систем для целей налогового мониторинга с&nbsp;АИС &laquo;Налог-3&raquo;</li>
+                                    <li>Обеспечение прямого обмена информацией с&nbsp;системой налогового органа</li>
+                                    <li>Диагностика текущего состояния электронного архива на&nbsp;соответствие с&nbsp;требованиями ФНС России, формирование требований на&nbsp;доработку электронного архива, подготовка технического задания и&nbsp;проектирование доработок/разработок.</li>
+                                    <li>Доработка или внедрение электронного архива компании</li>
+                                    <li>Закупка и&nbsp;настройка средств криптографической защиты информации</li>
+                                    <li>Закупка и&nbsp;поставка интеграционного модуля для интеграции с&nbsp;АИС &laquo;Налог-3&raquo;</li>
+                                    <li>Интеграция информационных систем налогоплательщика с&nbsp;АИС &laquo;Налог-3&raquo;</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-settings_ab">
+                	<div class="text-about-set_ab">Мы&nbsp;помогаем вступить в&nbsp;налоговый мониторинг и&nbsp;выполнить интеграцию с&nbsp;АИС &laquo;Налог-3&raquo; компаниям из&nbsp;следующих отраслей:</div>
+                    <div class="img-about-setting_ab">
+                        <picture>
+                        	<source srcset="images_tmp/img-about-settings@1x.png 1x, images_tmp/img-about-settings@2x.png 2x" type="image/png">
+                        	<img src="images_tmp/img-about-settings@1x.png" alt="">
+                        </picture> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wr-grey-cont">
+                <div class="b-possible-serv_ab">
+                    <div class="title">Возможности системы</div>
+                    
+                    <div class="body-possible_ab">
+                        <div class="col-possible_ab">
+                            <div class="item-possible_ab">
+                                <div class="tit-possible_ab">Раскрытие показателей отчетности</div>
+                                <ul>
+                                    <li>Предоставление информации по&nbsp;показателям деклараций, аналитическим регистрам налогового учета и&nbsp;первичным документам.</li>
+                                    <li>Раскрытие налоговых показателей от&nbsp;деклараций до&nbsp;первичного документа.</li>
+                                    <li>Формирование в&nbsp;витрине данных управленческой, оперативной и&nbsp;статистической отчетности.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="item-possible_ab">
+                                <div class="tit-possible_ab">Система внутренних контролей</div>
+                                <ul>
+                                    <li>Внедрение системы внутреннего контроля процессов, формирование карточек рисков и&nbsp;контрольных процедур.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-possible_ab">
+                            <div class="item-possible_ab">
+                                <div class="tit-possible_ab">Информационное взаимодействие с&nbsp;ФНС</div>
+                                <ul>
+                                    <li>Получение мотивированных мнений от&nbsp;ФНС.</li>
+                                    <li>Запрос документов и&nbsp;пояснений по&nbsp;отчетам непосредственно из&nbsp;системы.</li>
+                                </ul>
+                            </div>
+                            <div class="item-possible_ab">
+                                <div class="tit-possible_ab">Администрирование доступа</div>
+                                <ul>
+                                    <li>Идентификация даты и&nbsp;времени загрузки, выгрузки или изменения документов налоговым инспектором и&nbsp;сотрудниками.</li>
+                                    <li>Разграничение прав доступа государственным органам, аудиторским компаниям или службам контроля внутри организации.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wr-white-cont-bot">
+                <div class="b-stage-serv_ab">
+                    <div class="title">Этапы работ</div>
+                    <div class="text-serv-stage_ab">При развертывании системы осуществляем весь комплекс работ от&nbsp;методологической поддержки до&nbsp;доработки типовой конфигурации под задачи заказчика.</div>
+                    
+                    <div class="tabs-stage-serv_ab tabs-tb">
+                        <div class="nav-stage-serv_ab nav-tb">
+                            <div class="item-nav-stage-serv_ab">
+                                <i>1</i>
+                                <p>Оценка готовности к&nbsp;переходу</p>
+                            </div>
+                                <div class="item-nav-stage-serv_ab">
+                                <i>2</i>
+                                <p>Разработка системы налогового мониторинга</p>
+                            </div>
+                                <div class="item-nav-stage-serv_ab">
+                                <i>3</i>
+                                <p>Подготовка и&nbsp;подача документов</p>
+                            </div>
+                                <div class="item-nav-stage-serv_ab">
+                                <i>4</i>
+                                <p>Доработка процессов и&nbsp;ИТ-систем</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cont-stage-serv_ab cont-tb">
+                            <div class="tab-stage-serv_ab tab-tb">
+                                <ul>
+                                    <li>Разработка методологии раскрытия налоговых показателей и&nbsp;показателей СВК.</li>
+                                    <li>Разработка архитектуры автоматизированного решения.</li>
+                                    <li>Проектирование и&nbsp;реализация системы.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-stage-serv_ab tab-tb">
+                                <ul>
+                                    <li>Разработка методологии раскрытия налоговых показателей и&nbsp;показателей СВК.</li>
+                                    <li>Разработка архитектуры автоматизированного решения.</li>
+                                    <li>Проектирование и&nbsp;реализация системы.</li>
+                                    <li>Разработка архитектуры автоматизированного решения.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-stage-serv_ab tab-tb">
+                                <ul>
+                                    <li>Разработка методологии раскрытия налоговых показателей и&nbsp;показателей СВК.</li>
+                                    <li>Проектирование и&nbsp;реализация системы.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-stage-serv_ab tab-tb">
+                                <ul>
+                                    <li>Разработка методологии раскрытия налоговых показателей и&nbsp;показателей СВК.</li>
+                                    <li>Разработка архитектуры автоматизированного решения.</li>
+                                    <li>Проектирование и&nbsp;реализация системы.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-serv-stage-bot_ab">После завершения перехода на&nbsp;систему налогового мониторинга компания сможет сократить объёмы документооборота, минимизировать риски, обмениваться документами с&nbsp;ФНС в&nbsp;режиме онлайн.</div>
+                    <div class="panel-serv_ab">
+                        <p>Получите план вступления в&nbsp;Получите запись вебинара по&nbsp;переходу на&nbsp;цифровой налоговый мониторинг мониторинг</p>
+                        <div class="but-more"><a data-fancybox href="#callback">Отправить заявку</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wr-white-cont-center">
+                <div class="b-projects-serv_ab">
+                    <div class="title">Реализованные проекты</div>
+                    
+                    <div class="slider-serv_ab fix-load">
+                        <div class="slide">
+                            <div class="in-slide-serv_ab">
+                                <div class="left-proj-serv_ab">
+                                    <div class="img-proj-serv_ab">
+                                        <a href="#">
+                                            <img src="images_tmp/img-serv-proj_ab.jpg" alt="">
+                                            <div class="logo-proj-serv_ab"><img src="images_tmp/ico-serv-proj_ab.svg" alt=""></div>
+                                        </a>
+                                    </div>
+                                    <div class="tit-porj-serv_ab"><a href="#">Проект внедрения Process Mining для анализа и&nbsp;оптимизации платежного процесса оператора мобильной связи Tele2</a></div>
+                                </div>
+                                
+                                <div class="right-proj-serv_ab">
+                                    <div class="bl-proj-param_ab">
+                                        <div class="tit-params-proj_ab">Задачи</div>
+                                        <ul>
+                                            <li>Моделирование и&nbsp;развертывание хранилища данных.</li>
+                                            <li>Доработка и&nbsp;тестирование инструментов расчета налога на&nbsp;имущество, создание 12&nbsp;новых отчетных форм для налога на&nbsp;имущество.</li>
+                                            <li>Разработка приложения для доступа к&nbsp;отчетам и&nbsp;публикации данных в&nbsp;Витрине налогового мониторинга по&nbsp;налогу на&nbsp;имущество.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bl-proj-param_ab">
+                                        <div class="tit-params-proj_ab">Результаты</div>
+                                        <ul>
+                                            <li>Возможность проведения комплексного анализа показателей налоговой отчетности в&nbsp;короткие сроки.</li>
+                                            <li>Уменьшение объема данных, представляемых в&nbsp;налоговые органы.</li>
+                                            <li>Снижение расходов компании на&nbsp;налоговое администрирование на&nbsp;15% за&nbsp;3&nbsp;года. Сокращение сроков проведения налоговых проверок.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="in-slide-serv_ab">
+                                <div class="left-proj-serv_ab">
+                                    <div class="img-proj-serv_ab">
+                                        <a href="#">
+                                            <img src="images_tmp/img-serv-proj_ab2.jpg" alt="">
+                                            <div class="logo-proj-serv_ab"><img src="images_tmp/logo-proj-big2.svg" alt=""></div>
+                                        </a>
+                                    </div>
+                                    <div class="tit-porj-serv_ab"><a href="#">Проект внедрения Process Mining для анализа и&nbsp;оптимизации платежного процесса оператора мобильной связи Tele2</a></div>
+                                </div>
+                                
+                                <div class="right-proj-serv_ab">
+                                    <div class="bl-proj-param_ab">
+                                        <div class="tit-params-proj_ab">Задачи</div>
+                                        <ul>
+                                            <li>Моделирование и&nbsp;развертывание хранилища данных.</li>
+                                            <li>Доработка и&nbsp;тестирование инструментов расчета налога на&nbsp;имущество, создание 12&nbsp;новых отчетных форм для налога на&nbsp;имущество.</li>
+                                            <li>Разработка приложения для доступа к&nbsp;отчетам и&nbsp;публикации данных в&nbsp;Витрине налогового мониторинга по&nbsp;налогу на&nbsp;имущество.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bl-proj-param_ab">
+                                        <div class="tit-params-proj_ab">Результаты</div>
+                                        <ul>
+                                            <li>Возможность проведения комплексного анализа показателей налоговой отчетности в&nbsp;короткие сроки.</li>
+                                            <li>Уменьшение объема данных, представляемых в&nbsp;налоговые органы.</li>
+                                            <li>Снижение расходов компании на&nbsp;налоговое администрирование на&nbsp;15% за&nbsp;3&nbsp;года. Сокращение сроков проведения налоговых проверок.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-news_main">
+                        <div class="nav-slider">
+                            <div class="arrow-prev_m prev-proj-serv-ab"></div>
+                            <div class="arrow-next_m next-proj-serv-ab"></div>
+                        </div>
+                        <div class="button-border"><a href="#">Отзыв заказчика</a></div>
+                        <div class="but-more"><a href="#">Все проекты</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wr-white-cont-top">
+                <div class="b-benef-serv_ab">
+                    <div class="title"><b>Преимущества</b> работы с&nbsp;RAMAX Group</div>
+                    <div class="body-benef-sev_ab">
+                        <div class="left-benef-serv_ab">
+                            <p>RAMAX Group&nbsp;&mdash; это мультивендорный интегратор. Компания предоставляет услуги сопровождения по&nbsp;внедрению цифровых систем налогового учёта, включая настройку интеграции с&nbsp;модулем АИС &laquo;Налог-3&raquo;. В&nbsp;результате упрощается подготовка отчётности, минимизируются риски из-за ошибок в&nbsp;документах, предупреждается получение штрафных санкций за&nbsp;счёт наличия мотивированного мнения ФНС.</p>
+                        </div>
+                        
+                        <div class="right-benef-serv_ab">
+                            <div class="grey-benef_ab">Специалисты RAMAX Group разработают методологию и&nbsp;архитектуру автоматизированных решений, подготовят проект системы, протестируют её&nbsp;и&nbsp;внесут необходимые доработки. После ввода в&nbsp;эксплуатацию бизнесу будут предоставлены услуги технической поддержки в&nbsp;формате 24/7.</div>
+                        </div>
+                    </div>
+                    <div class="list-benef-serv_ab">
+                        <div class="item-benef-serv_ab">
+                            <div class="ico-benef-serv_ab"><img src="images_tmp/ico-benef-serv_ab1.png" alt=""></div>
+                            <div class="desc-beenf-serv_ab">
+                                <i>Опыт взаимодействия с&nbsp;регулятором на&nbsp;проектах</i>
+                                <p>Мы&nbsp;понимаем, что необходимо ФНС, как участнику системы налогового мониторинга.</p>
+                            </div>
+                        </div>
+                        <div class="item-benef-serv_ab">
+                            <div class="ico-benef-serv_ab"><img src="images_tmp/ico-benef-serv_ab2.png" alt=""></div>
+                            <div class="desc-beenf-serv_ab">
+                                <i>Проектный опыт совместной работы</i>
+                                <p>С&nbsp;компаниями, оказывающими методологические услуги по&nbsp;налоговому мониторингу&nbsp;&mdash; Deloitte, PWC, VK.</p>
+                            </div>
+                        </div> 
+                        <div class="item-benef-serv_ab">
+                            <div class="ico-benef-serv_ab"><img src="images_tmp/ico-benef-serv_ab3.png" alt=""></div>
+                            <div class="desc-beenf-serv_ab">
+                                <i>Мультивендорный интегратор</i>
+                                <p>Выбор подходящей платформы налогового мониторинга 1C, SAP или VK&nbsp;Tax Compliance под вашу учетную систему.</p>
+                            </div>
+                        </div>
+                        <div class="item-benef-serv_ab">
+                            <div class="ico-benef-serv_ab"><img src="images_tmp/ico-benef-serv_ab4.png" alt=""></div>
+                            <div class="desc-beenf-serv_ab">
+                                <i>Профессиональная команда</i>
+                                <p>Премии за&nbsp;создание IT-проектов для корпоративного налогообложения говорят о&nbsp;команде, которая даст ожидаемый результат.</p>
+                            </div>
+                        </div>
+                        <div class="item-benef-serv_ab">
+                            <div class="ico-benef-serv_ab"><img src="images_tmp/ico-benef-serv_ab5.png" alt=""></div>
+                            <div class="desc-beenf-serv_ab">
+                                <i>Кратчайшие сроки внедрения</i>
+                                <p>Прототип на&nbsp;одном налоге реализуется от&nbsp;2&nbsp;до&nbsp;4&nbsp;месяцев.</p>
+                            </div>
+                        </div>
+                        <div class="item-benef-serv_ab">
+                            <div class="ico-benef-serv_ab"><img src="images_tmp/ico-benef-serv_ab6.png" alt=""></div>
+                            <div class="desc-beenf-serv_ab">
+                                <i>Интеграция системы</i>
+                                <p>Интеграция в&nbsp;существующую учетную систему не&nbsp;требует затрат на&nbsp;создание новой и&nbsp;экономит время на&nbsp;реализацию проекта.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel-serv_ab">
+                        <p>Закажите демонстрацию системы налогового мониторинга</p>
+                        <div class="but-more"><a data-fancybox href="#callback">Отправить заявку</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wr-ask-bottom">
+            <div class="block-ask-bottom">
+                <div class="left-ask_bot">
+                    <div class="tit-ask_bot">Ждём ваши вопросы</div>
+                    <p>Хотите узнать больше о&nbsp;наших проектах и&nbsp;экспертизе?<br> Обсудить ваш проект?</p>
+                    <div class="but-more"><a data-fancybox href="#callback">Задать вопрос</a></div>
+                </div>
+                <div class="right-ask_bot"><div class="decor-ask"><img src="images/decor-ask.png" alt=""></div></div>
+            </div>
+        </div>
+	</div><!--main-->
+	
+	<footer>
+		<div class="cont-f">
+        	<div class="left-footer">
+            	<div class="top_left-footer">
+                	<div class="copy">&copy;&nbsp;Рамакс Групп, 2024</div>
+                    <div class="contacts-footer">
+                    	<div class="phone-f"><a href="tel:+74959136771">+7 (495) 913-6771</a></div>
+                        <div class="callback_f"><a data-fancybox href="#callback">Отправить запрос</a></div>
+                    </div>
+                </div>
+                <div class="link-f">
+                	<ul>
+                        <li><a target="_blank" href="#">Политика обработки персональных данных по&nbsp;поручению</a></li>
+                        <li><a target="_blank" href="#">Политика обработки персональных данных</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="right-footer">
+            	<div class="soc-f">
+                	<ul>
+                    	<li class="item1"><a target="_blank" href="https://t.me/ramax_group"></a></li>
+                        <li class="item2"><a target="_blank" href="https://www.youtube.com/channel/UC0-YWCNHsW2_-qCmvTdws6Q"></a></li>
+                        <li class="item3"><a target="_blank" href="https://vk.com/ramaxgroup"></a></li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+	</footer>
+</div>
+
+<div style="display:none" id="callback" class="pop-callback">
+	<div class="tit-pop">Отправить запрос</div>
+    <form>
+    	<div class="field">
+            <input type="text" placeholder="">
+            <label>ФИО <i>*</i></label>
+        </div>
+    	<div class="field">
+            <input type="text" placeholder="">
+            <label>Компания <i>*</i></label>
+        </div>
+    	<div class="field">
+            <input type="text" placeholder="">
+            <label>Телефон <i>*</i></label>
+        </div>
+    	<div class="field">
+            <input type="text" placeholder="">
+            <label>E-mail </label>
+        </div>
+    	<div class="textarea">
+            <textarea></textarea>
+            <label>Ваш запрос <i>*</i></label>
+        </div>
+        <div class="text-assets">* — заполните обязательно</div>
+        <div class="check">
+            <input checked id="check-pop1" type="checkbox">
+            <label for="check-pop1">Я согласен получать информационную рассылку</label>
+        </div>
+        <div class="check">
+            <input id="check-pop2" type="checkbox">
+            <label for="check-pop2">Я ознакомился с <a target="_blank" href="#">Политикой по&nbsp;работе с&nbsp;персональными данными и&nbsp;даю согласие на&nbsp;передачу и&nbsp;обработку моих персональных данных</a>.</label>
+        </div>
+        <div class="button-send"><button type="submit">Отправить запрос</button></div>
+    </form>
+</div>
+</body>
+</html>
