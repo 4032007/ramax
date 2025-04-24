@@ -84,9 +84,138 @@ gsap.matchMedia().add("(min-width: 767px)", () => {
 		x: 0,
 		duration: 1,
 		ease: "power2.out"
-	}); 
-});
+	});
 	
+//animation scheme
+	gsap.to(".item-service_ab.item1", {
+	  y: 0,
+	  opacity: 1,
+	  duration: 1,
+	  stagger: 0.2,
+	  ease: "power3.out",
+	  scrollTrigger: {
+		trigger: ".b-scheme-service_ab",
+		start: "top 50%",
+		toggleActions: "play none none reset"
+	  }
+	});
+	
+	gsap.to(".item-service_ab.item4", {
+	  y: 0,
+	  opacity: 1,
+	  duration: 1,
+	  stagger: 0.3,
+	  delay: 0.4,
+	  ease: "power3.out",
+	  scrollTrigger: {
+		trigger: ".b-scheme-service_ab",
+		start: "top 50%",
+		toggleActions: "play none none reset"
+	  }
+	});
+	
+	gsap.to(".item-service_ab.item2", {
+	  y: 0,
+	  opacity: 1,
+	  duration: 1,
+	  stagger: 0.3,
+	  delay: 0.6,
+	  ease: "power3.out",
+	  scrollTrigger: {
+		trigger: ".b-scheme-service_ab",
+		start: "top 50%",
+		toggleActions: "play none none reset"
+	  }
+	});
+	
+	gsap.to(".item-service_ab.item5", {
+	  y: 0,
+	  opacity: 1,
+	  duration: 1,
+	  stagger: 0.3,
+	  delay: 0.8,
+	  ease: "power3.out",
+	  scrollTrigger: {
+		trigger: ".b-scheme-service_ab",
+		start: "top 50%",
+		toggleActions: "play none none reset"
+	  }
+	});
+	
+	gsap.to(".item-service_ab.item3", {
+	  y: 0,
+	  opacity: 1,
+	  duration: 1,
+	  stagger: 0.3,
+	  delay: 1,
+	  ease: "power3.out",
+	  scrollTrigger: {
+		trigger: ".b-scheme-service_ab",
+		start: "top 50%",
+		toggleActions: "play none none reset"
+	  }
+	});
+	
+	gsap.to(".item-service_ab.item6", {
+	  y: 0,
+	  opacity: 1,
+	  duration: 1,
+	  stagger: 0.3,
+	  delay: 1.2,
+	  ease: "power3.out",
+	  scrollTrigger: {
+		trigger: ".b-scheme-service_ab",
+		start: "top 30%",
+		toggleActions: "play none none reset"
+	  }
+	});
+	
+	gsap.fromTo(".block-info-scheme_ab",
+	  {
+		opacity: 0,
+		y: 0,
+		filter: "blur(6px)"
+	  },
+	  {
+		opacity: 1,
+		y: 0,
+		filter: "blur(0px)",
+		duration: 1,
+		stagger: 0.2,
+		delay: 2.1,
+		ease: "power3.out",
+		scrollTrigger: {
+		  trigger: ".b-scheme-service_ab",
+		  start: "top 30%",
+		  toggleActions: "play none none reset"
+		}
+	  }
+	);
+	
+	gsap.fromTo(".item-what-serv_ab",
+	  {
+		opacity: 0,
+		y: 50,
+		scale: 0.9
+	  },
+	  {
+		opacity: 1,
+		y: 0,
+		scale: 1,
+		duration: 1,
+		stagger: {
+		  each: 0.5,
+		  from: "start" // можно "center", "end", "edges" для интересных эффектов
+		},
+		ease: "power3.out",
+		scrollTrigger: {
+		  trigger: ".b-what-serv_ab",
+		  start: "top 30%",
+		  toggleActions: "play none none reset"
+		}
+	  }
+	);
+});
 //scroll logo
 	document.addEventListener('DOMContentLoaded', function () {
 		const container = document.querySelector('.list-lent-customers');
@@ -100,4 +229,29 @@ gsap.matchMedia().add("(min-width: 767px)", () => {
 			container.appendChild(cloneDown);
 		}
 	});
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const outerBlock = document.querySelector('.b-settinegs-serv_ab');
+  const scrollBlock = document.querySelector('.list-serv-settings_ab');
+
+  function isElementFullyReachedTop(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= 1; // можешь подогнать по вкусу, например rect.top <= 10
+  }
+
+  window.addEventListener('wheel', function (e) {
+    if (window.innerWidth <= 999) return;
+    if (!outerBlock || !scrollBlock) return;
+    if (!isElementFullyReachedTop(outerBlock)) return;
+
+    const delta = e.deltaY;
+    const atTop = scrollBlock.scrollTop === 0;
+    const atBottom = scrollBlock.scrollTop + scrollBlock.clientHeight >= scrollBlock.scrollHeight;
+
+    if ((delta > 0 && !atBottom) || (delta < 0 && !atTop)) {
+      e.preventDefault();
+      scrollBlock.scrollTop += delta;
+    }
+  }, { passive: false });
 });
