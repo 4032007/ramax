@@ -231,6 +231,25 @@ gsap.matchMedia().add("(min-width: 767px)", () => {
 	});
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll('.sche-nn');
+  const duration = 2000;
+
+  elements.forEach(el => {
+    const target = +el.textContent;
+    let start = 0;
+    const stepTime = Math.max(Math.floor(duration / target), 10);
+
+    const counter = setInterval(() => {
+      start++;
+      el.textContent = start;
+      if (start >= target) {
+        clearInterval(counter);
+      }
+    }, stepTime);
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   const outerBlock = document.querySelector('.b-settinegs-serv_ab');
   const scrollBlock = document.querySelector('.list-serv-settings_ab');
