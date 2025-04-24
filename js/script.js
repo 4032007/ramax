@@ -260,7 +260,7 @@ $(function(){
 			arrows: true,
 			dots: false,
 			infinite: true,
-			fade: true,
+			fade: false,
 			prevArrow: $(this).parent().parent().find('.prev-proj-serv-ab'),
 			nextArrow: $(this).parent().parent().find('.next-proj-serv-ab')
 		});
