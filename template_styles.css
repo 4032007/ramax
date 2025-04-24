@@ -2192,4 +2192,7 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 	.ico-benef-serv_ab{width:70px}
 	.b-benef-serv_ab{padding-bottom:10px}
 	.text-serv-stage_ab, .text-serv-stage-bot_ab, .tabs-stage-serv_ab{margin-bottom:30px}
+	.b-projects-serv_ab .title{margin-bottom:20px}
+	.wr-nav-mob-proj{display:flex;justify-content:flex-end;margin-bottom:25px}
+	.wr-nav-mob-proj .nav-slider{min-width:96px}
 }
