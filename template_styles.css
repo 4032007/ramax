@@ -97,7 +97,7 @@ header{max-width:1380px;padding:0 15px 0 15px;margin:0 auto;display:flex;align-i
 .but-more a:hover{background:linear-gradient(90deg,#ff3434 0,#dc0000 100%)}
 .top-block-right_main{position:relative}
 .top-video_main{position:relative;top:38px;left:-122px;animation: smooth-shake2 2s ease-in-out infinite;}
-.top-video_main img{display:block}
+.top-video_main img{display:block;max-width:654px}
 .big-title_main{margin:85px 0 0 0;font-size:82px;line-height:93px;font-weight:700;text-align:center;color:#ff3434}
 .b-directions-main{max-width:1270px;margin:0 auto;padding:97px 15px 130px 15px}
 .head-directions_main{display:flex;align-items:center;margin:0 0 43px 0}
@@ -141,8 +141,11 @@ header{max-width:1380px;padding:0 15px 0 15px;margin:0 auto;display:flex;align-i
 .right-projects-main{width:100%;max-width:620px;margin-left:auto;padding-top:15px}
 .item-projects_main{margin:0 0 90px 0}
 .item-projects_main:last-child{margin-bottom:0}
-.img-projects_main{margin:0 0 28px 0;border-radius:30px 30px 30px 0;overflow:hidden}
+.img-projects_main{position:relative;margin:0 0 28px 0;border-radius:30px 30px 30px 0;overflow:hidden}
+.img-projects_main:before{content:'';display:block;width:100%;height:100%;position:absolute;top:0;left:0;background: linear-gradient(233.55deg, rgba(0, 0, 0, 0) 55.68%, rgba(0, 0, 0, 0.6) 100%);z-index:20}
 .img-projects_main img{display:block;max-width:100%;border-radius:30px 30px 30px 0;transition: transform 0.3s ease-in-out;}
+.logo-projects-main{position:absolute;bottom:38px;left:23px;z-index:30}
+.logo-projects-main img{display:block;max-width:100%}
 .tit-projects_main{font-size:22px;line-height:130%;font-weight:600}
 .tit-projects_main a{text-decoration:none;color:#333}
 .item-projects_main:hover .tit-projects_main a{color:#ff3434}
@@ -260,7 +263,7 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 
 @media screen and (min-width:999px){
 	.slider-services_m .slide:hover img{transform:scale(1.15)}
-	.item-projects_main:hover .img-projects_main img{transform:scale(1.15)}
+	.item-projects_main:hover .img-projects_main a > img, .item-projects_main:hover .img-projects_main > img{transform:scale(1.15)}
 }
 @media screen and (max-width:1600px){
 	.top-block_main{padding-top:100px}
@@ -851,7 +854,7 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 .soc-corporat ul li.item3 a{padding-left:44px}
 .right-corporat{position:relative}
 .img-corporat{position:absolute;left:-16px;top:-165px}
-.img-corporat img{display:block}
+.img-corporat img{display:block;max-width:636px}
 .video-corporat{position:relative;margin:0 0 70px 0}
 .video-corporat>a{display:block;position:relative;text-decoration:none;color:#fff}
 .video-corporat>a:before{position:absolute;top:0;left:0;content:'';pointer-events:none;display:block;width:100%;height:100%;border-radius:30px 30px 30px 0;background:linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.2)),linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 19.6%)}
@@ -974,7 +977,7 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 /*competent*/
 .ban-competent{position:relative;border-radius:30px;overflow:hidden}
 .ban-competent a{display:block}
-.ban-competent a>img{display:block;width:100%;border-radius:30px}
+.ban-competent a>img, .ban-competent a>picture>img{display:block;width:100%;border-radius:30px}
 .desc-competent{position:absolute;left:23px;bottom:29px;z-index:50}
 .logo-competent{margin:0 0 27px 0}
 .logo-competent img{display:block;max-width:187px}
@@ -1442,7 +1445,7 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 .left-full-compitent .button a{min-width:255px}
 .right-full-compitent{position:relative}
 .img-full-compitemt{margin-left:-107px;margin-top:25px}
-.img-full-compitemt img{display:block}
+.img-full-compitemt img{display:block;max-width:560px}
 .logo-full-compitemt{position:absolute;bottom:137px;left:-185px}
 .number-compitent{position:relative;z-index:50;margin:0 0 62px 0;padding:78px 0 130px 0}
 .number-compitent:before{content:'';display:block;width:99.8vw;z-index:-1;position:absolute;top:0;left:50%;margin:0 0 0 -50vw;height:100%;background:#f6f6f6;border-radius:50px}
