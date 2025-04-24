@@ -142,7 +142,8 @@ header{max-width:1380px;padding:0 15px 0 15px;margin:0 auto;display:flex;align-i
 .item-projects_main{margin:0 0 90px 0}
 .item-projects_main:last-child{margin-bottom:0}
 .img-projects_main{position:relative;margin:0 0 28px 0;border-radius:30px 30px 30px 0;overflow:hidden}
-.img-projects_main:before{content:'';display:block;width:100%;height:100%;position:absolute;top:0;left:0;background: linear-gradient(233.55deg, rgba(0, 0, 0, 0) 55.68%, rgba(0, 0, 0, 0.6) 100%);z-index:20}
+.img-projects_main a{position:relative;display:block}
+.img-projects_main a:before{content:'';display:block;width:100%;height:100%;position:absolute;top:0;left:0;background: linear-gradient(233.55deg, rgba(0, 0, 0, 0) 55.68%, rgba(0, 0, 0, 0.6) 100%);z-index:20}
 .img-projects_main img{display:block;max-width:100%;border-radius:30px 30px 30px 0;transition: transform 0.3s ease-in-out;}
 .logo-projects-main{position:absolute;bottom:38px;left:23px;z-index:30}
 .logo-projects-main img{display:block;max-width:100%}
@@ -263,7 +264,7 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 
 @media screen and (min-width:999px){
 	.slider-services_m .slide:hover img{transform:scale(1.15)}
-	.item-projects_main:hover .img-projects_main a > img, .item-projects_main:hover .img-projects_main > img{transform:scale(1.15)}
+	.item-projects_main:hover .img-projects_main a > img, .item-projects_main:hover .img-projects_main > img, .item-projects_main:hover .img-projects_main > a > picture > img{transform:scale(1.15)}
 }
 @media screen and (max-width:1600px){
 	.top-block_main{padding-top:100px}
