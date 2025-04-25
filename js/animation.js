@@ -205,7 +205,7 @@ gsap.matchMedia().add("(min-width: 767px)", () => {
 		duration: 1,
 		stagger: {
 		  each: 0.5,
-		  from: "start" // можно "center", "end", "edges" для интересных эффектов
+		  from: "start"
 		},
 		ease: "power3.out",
 		scrollTrigger: {
@@ -215,6 +215,15 @@ gsap.matchMedia().add("(min-width: 767px)", () => {
 		}
 	  }
 	);
+	
+//animation images
+ gsap.to('.img-page-vacan, .img-top-serv_ab, .right-full-compitent', {
+    opacity: 1,
+    x: 0,
+    duration: 1.2,
+    ease: 'power2.out'
+  });
+  
 });
 //scroll logo
 	document.addEventListener('DOMContentLoaded', function () {
@@ -256,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function isElementFullyReachedTop(el) {
     const rect = el.getBoundingClientRect();
-    return rect.top <= 1; // можешь подогнать по вкусу, например rect.top <= 10
+    return rect.top <= 1;
   }
 
   window.addEventListener('wheel', function (e) {
