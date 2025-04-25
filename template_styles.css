@@ -1563,6 +1563,7 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 	.tit-serv-compitent{text-align:center}
 	.ico-serv-compitent{justify-content:center}
 	.text-full-compitemt{font-size:16px;line-height:24px}
+	.right-full-compitent{opacity:1!important;transform:none!important}
 }
 
 /*vacan*/
@@ -1683,6 +1684,7 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 	.item-command:before{top:31px}
 	.b-carier-univer .but-more a{width:100%}
 	.left-univer p{font-size:16px;line-height:24px}
+	.img-page-vacan{opacity:1!important;transform:none!important}
 }
 
 /*about history*/
@@ -2208,4 +2210,5 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 	.b-projects-serv_ab .title{margin-bottom:20px}
 	.wr-nav-mob-proj{display:flex;justify-content:flex-end;margin-bottom:25px}
 	.wr-nav-mob-proj .nav-slider{min-width:96px}
+	.img-top-serv_ab{opacity:1!important;transform:none!important}
 }
