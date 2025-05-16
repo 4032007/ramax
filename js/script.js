@@ -315,6 +315,44 @@ $(function(){
 			]
 		});
 	});
+	
+	$('.slider-siblings-direct').each(function(){
+		$(this).slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			arrows: true,
+			dots: false,
+			infinite: true,
+			fade: false,
+			prevArrow: $(this).parent().parent().find('.prev-other-direct'),
+			nextArrow: $(this).parent().parent().find('.next-other-direct'),
+			responsive: [
+				{
+					breakpoint: 999,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: false
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	});
 
 //tabs
 	$('.nav-tab-news_main li:eq(0)').addClass('active');
