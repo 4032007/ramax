@@ -1,4 +1,9 @@
 $(function(){
+	$('.but-tags-more').click(function(){
+		$(this).prev().toggleClass('active')
+		return false
+	});	
+	
 //sliders	
 	$('.slider-news_main').each(function(){
 		$(this).slick({
