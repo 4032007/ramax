@@ -2343,3 +2343,17 @@ footer{margin-top:auto;min-width:300px;overflow:hidden}
 	.body-metod ul:last-child{margin-bottom:0}
 	.b-steps_n ul li{font-size:16px;line-height:24px;padding-left:70px}
 }
+
+.tags-press{position:relative;display:flex;flex-wrap:wrap;margin-top:-10px}
+.in-tags-press{margin:10px 0 0 0}
+.tags-press ul{margin-top:40px;display:none;margin-left:0}
+.tags-press ul:first-child{margin-top:-10px;display:flex}
+.tags-press ul li{display:none;margin-right:10px;margin-left:0}
+.tags-press ul li:nth-child(-n+4){display:block}
+.but-tags-more{font-size:16px;line-height:24px;margin:10px 0 0 0}
+.but-tags-more i{display:inline-flex;cursor:pointer;min-height:30px;align-items:center;border:1px solid #d9d9d9;border-radius:50px;padding:0 15px 1px 15px;color:#000;text-decoration:none;justify-content:center;text-align:center;font-style:normal;cursor:pointer}
+.but-tags-more i:hover{color:#fff;background:#ff3434;border-color:#ff3434}
+.but-tags-more i:before{content:'...'}
+.active + .but-tags-more i:before{content:'↑'}
+.in-tags-press.active ul{ display:flex}
+.in-tags-press.active ul li{display:block !important}
